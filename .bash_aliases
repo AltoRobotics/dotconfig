@@ -20,6 +20,8 @@ fi
 
 export CMAKE_EXPORT_COMPILE_COMMANDS=1
 
-alias colbuild=' colcon build --cmake-args " -GNinja"'
+alias colbuild=' colcon build --cmake-args " -GNinja"  --event-handlers console_direct+ '
+alias colbuildm=' colcon build --cmake-args " -GNinja"  --event-handlers console_direct+ --merge-install'
 # DANGEROUS clean a workspace to be run only in ws root
-alias colclean="rm -rf build/ install/ log/" 
+alias colclean="rm -rf build/ install/ log/"
+
