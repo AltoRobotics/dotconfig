@@ -21,4 +21,5 @@ fi
 export CMAKE_EXPORT_COMPILE_COMMANDS=1
 
 alias colbuild=' colcon build --cmake-args " -GNinja"'
-
+# DANGEROUS clean a workspace to be run only in ws root
+alias colclean="rm -rf build/ install/ log/" 
