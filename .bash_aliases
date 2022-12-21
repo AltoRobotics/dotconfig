@@ -9,7 +9,7 @@ alias cbuild='cmake --build .'
 alias cinstall='cmake --build . --target install'
 alias h=history
 
-export EDITOR=nvim
+export EDITOR=vim
 export VISUAL=$EDITOR
 
 # autostart tmux
