@@ -1,0 +1,40 @@
+[user]
+  email = altorobotics.ai 
+  name = 
+[cola]
+  spellcheck = false
+
+[diff]
+  tool = p4merge
+[difftool]
+  prompt = false
+[difftool "p4merge"]
+  cmd = p4merge "$LOCAL" "$REMOTE"
+
+[difftool "meld"]
+  cmd = meld "$LOCAL" "$REMOTE"
+
+[difftool "difftastic"]
+  cmd = difft "$LOCAL" "$REMOTE"
+
+# Add the following to your .gitconfig file.
+[merge]
+  tool = p4merge
+
+[mergetool]
+  prompt = false
+  keepBackup = false
+  keepTemporaries = false  
+
+[mergetool "p4merge"]
+  cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+  trustExitCode = true
+
+[mergetool "meld"]
+  cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+
+[alias]
+	st = status -sb
+	last = log -1 HEAD --stat
+	difftastic = difftool -t difftastic
+	gl = config --global -l
