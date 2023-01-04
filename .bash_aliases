@@ -11,6 +11,7 @@ alias h=history
 
 export EDITOR=vim
 export VISUAL=$EDITOR
+export COLORTERM=truecolor
 
 # autostart tmux
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
