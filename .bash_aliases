@@ -14,9 +14,9 @@ export VISUAL=$EDITOR
 export COLORTERM=truecolor
 
 # autostart tmux
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-    exec tmux
-fi
+#if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+#    exec tmux
+#fi
 
 
 export CMAKE_EXPORT_COMPILE_COMMANDS=1
