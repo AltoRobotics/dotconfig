@@ -26,3 +26,11 @@ alias colbuildm=' colcon build --cmake-args " -GNinja"  --event-handlers console
 # DANGEROUS clean a workspace to be run only in ws root
 alias colclean="rm -rf build/ install/ log/"
 
+
+# interact with the keyboard from the bash
+alias pbcopy="xsel --clipboard --input"
+alias pbpaste="xsel --clipboard --output"
+
+# if you use mcfly enable the fuzzer
+export MCFLY_FUZZY=2
+
