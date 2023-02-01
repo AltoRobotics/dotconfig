@@ -1,0 +1,9 @@
+$include /etc/inputrc
+
+# Ctrl-backspace to delete last word
+"\C-h": backward-kill-word
+
+# Ctrl-delete to delete next word
+"\e[3;5~": kill-word
+# urxvt
+"\e[3^": kill-word
